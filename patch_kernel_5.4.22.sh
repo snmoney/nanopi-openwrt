@@ -14,7 +14,7 @@ rm target/linux/generic/hack-5.4/700-swconfig_switch_drivers.patch
 cd ../
 
 #add some i2c options
-mv kconfig kernel/arch/arm64/configs/nanopi-r2_linux_defconfig
+mv ../kconfig kernel/arch/arm64/configs/nanopi-r2_linux_defconfig
 
 wget https://github.com/torvalds/linux/raw/master/scripts/kconfig/merge_config.sh && chmod +x merge_config.sh
 grep -i '_NETFILTER_\|FLOW' ../.config.override > .config.override
