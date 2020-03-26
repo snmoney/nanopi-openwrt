@@ -104,8 +104,8 @@ jobs:
           mkdir -p ./artifact/
           #mv friendlywrt-rk3328/out/*img* ./artifact/
           pwd
-          ls -l
-          ls -l friendlywrt-rk3328/
+          ls -la
+          ls -la friendlywrt-rk3328/
           cp remove_unused_config.sh ./artifact/
           cp friendlywrt-rk3328/.config ./artifact/
           cp friendlywrt-rk3328/kconfig ./artifact/
