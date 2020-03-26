@@ -8,6 +8,9 @@ on:
       - '.github/workflows/r2s_lean.yml'
   #schedule:
   #  - cron: '10 09 * * *'
+#env:  
+#  SSH_ACTIONS: true  
+#  TZ: Asia/Shanghai
 
 jobs:
 
@@ -48,6 +51,7 @@ jobs:
 
       - name: Patch Kernel
         run: |
+          #没效果，一定是我方法不对
           cp kconfig friendlywrt-rk3328/kconfig
           . patch_kernel_5.4.22.sh
 
