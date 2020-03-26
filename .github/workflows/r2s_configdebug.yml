@@ -107,9 +107,11 @@ jobs:
           ls -la
           ls -la friendlywrt-rk3328/
           cp remove_unused_config.sh ./artifact/
-          cp friendlywrt-rk3328/.config ./artifact/
+          #cp friendlywrt-rk3328/.config ./artifact/
           cp friendlywrt-rk3328/kconfig ./artifact/
           cp friendlywrt-rk3328/.config.override ./artifact/
+          mv friendlywrt-rk3328/configs ./artifact/configs
+          mv friendlywrt-rk3328/scripts ./artifact/scripts
           cp .config.override ./artifact/.config.override.raw
           cp friendlywrt-rk3328/kernel/arch/arm64/configs/nanopi-r2_linux_defconfig ./artifact/
           
