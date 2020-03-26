@@ -102,7 +102,7 @@ jobs:
         run: |
           rm -rf ./artifact/
           mkdir -p ./artifact/
-          mv friendlywrt-rk3328/out/*img* ./artifact/
+          #mv friendlywrt-rk3328/out/*img* ./artifact/
           cp friendlywrt-rk3328/friendlywrt/.config ./artifact/
           cp friendlywrt-rk3328/kconfig ./artifact/
           cp friendlywrt-rk3328/friendlywrt/.config.override ./artifact/
